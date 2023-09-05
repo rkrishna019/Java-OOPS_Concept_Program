@@ -1,0 +1,19 @@
+interface Print {
+    void draw();
+}
+interface Show{
+    void draw();
+}
+
+class drawing implements Print,Show{
+    
+    public void draw(){
+        System.out.println("Draw a picture of famous actot Akshay Kumar");
+    }
+    
+    public static void main(String args[]){
+        
+        drawing d = new drawing();
+        d.draw();
+    }
+}
