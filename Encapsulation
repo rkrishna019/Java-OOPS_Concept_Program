@@ -1,0 +1,55 @@
+class Account{
+    
+    private int acc_no;
+    private String name;
+    private String email;
+    
+    public void setAcc_no(int acc_no){
+        
+        this.acc_no = acc_no;
+    }
+    public int getAcc_no(){
+        
+        return acc_no;
+    }
+    
+    public void setname(String name){
+        
+        this.name = name;
+    }
+    public String getname(){
+        
+        return name;
+    }
+    
+    public void setName(String name){
+        
+        this.name = name;
+    }
+    public String getName(){
+        
+        return name;
+    }
+    
+    public void setEmail(String email){
+        
+        this.email = email;
+    }
+    public String getEmail(){
+        
+        return email;
+    }
+}
+
+class Test{
+    public static void main(String args[]){
+        Account a = new Account();
+        a.setAcc_no(66552211);
+        a.setName("Radha Krishna");
+        a.setEmail("krish0019@gmail.com");
+        
+        System.out.println("Account Number:"+a.getAcc_no());
+        System.out.println("Name:"+a.getName());
+        System.out.println("Email Address:"+a.getEmail());
+    }
+}
