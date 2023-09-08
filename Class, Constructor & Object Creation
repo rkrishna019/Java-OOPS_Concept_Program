@@ -1,0 +1,30 @@
+class Employee{
+    
+    int id;
+    int dept_Id;
+    String name;
+    String email_Id;
+    
+    Employee(int id, int dept_Id, String name, String email_Id){
+        
+        this.id = id;
+        this.dept_Id = dept_Id;
+        this.name = name;
+        this.email_Id = email_Id;
+    }
+    
+    void display(){
+        
+        System.out.println(id + " "+name+" "+dept_Id+" "+email_Id);
+        
+    }
+        public static void main(String args[]){
+            
+            Employee e1= new Employee(2213022,001,"Radha Krishna","krishh@gmail.com");
+            Employee e2 = new Employee(22130259,005,"Vivek Kale","Kale0019@gmail.com");
+            e1.display();
+            e2.display();
+            
+        }
+        
+    }
