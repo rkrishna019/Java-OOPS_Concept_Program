@@ -1,0 +1,25 @@
+class Student implements Cloneable
+{
+    int roll_no;
+    String name;
+    
+    Student(int roll_no, String name){
+        this.roll_no = roll_no;
+        this.name = name;
+    }
+    public Object clone() throws CloneNotSupportedException{
+        return super.clone();
+         
+    }  
+    public static void main(String args[]){
+        try{
+            Student s1 = new Student(2213022,"Vivek Kale");
+            Student s2 = (Student)s1.clone();
+            
+            System.out.println(s1.roll_no+" "+s1.name);  
+            System.out.println(s2.roll_no+" "+s2.name);  
+        }
+        catch(CloneNotSupportedException c){
+        }
+        }
+    }
