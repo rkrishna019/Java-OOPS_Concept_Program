@@ -1,0 +1,21 @@
+import java.util.*;
+class Student18 implements Cloneable {
+    String name;
+    int id;
+ Student18(String name, int id){
+        this.name = name;
+        this.id = id;
+    }
+    public Object clone() throws CloneNotSupportedException{
+        return super.clone();
+    }
+    public static void main(String args[]){
+        try{
+        Student18 s1 = new Student18("Radha",2213022);
+        Student18 s2 = (Student18)s1.clone();
+       System.out.println(s1.name +" "+s1.id);
+       System.out.println(s2.name +" "+s2.id);
+        }
+        catch(CloneNotSupportedException e){}
+    }
+}
